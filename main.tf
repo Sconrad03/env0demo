@@ -4,10 +4,6 @@ provider "aws" {
   secret_key = "nmJkYpS1mlkJZdsWNzf/1ygFkdNnKuMOGnzE+uUN"
 }
 
-resource "aws_s3_bucket_acl" "env0bucket" {
+resource "aws_s3_bucket" "env0bucket" {
   bucket = "bucketdemo"
-  acl = "private"
-    tags = {
-      Name = "bucketdemo"
-    }
 }
