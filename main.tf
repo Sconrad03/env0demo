@@ -13,9 +13,8 @@ resource "random_string" "random" {
   min_lower = "16"
 }
 
-resource "aws_s3_bucket" "website_bucket" {
-  bucket = "env0-s3-${random_string.random.result}"
-  force_destroy = true
+resource "aws_s3_bucket" "env0bucket" {
+  bucket = "bucketdemo"
 }
 
 resource "aws_s3_bucket_ownership_controls" "bucket_ownership" {
