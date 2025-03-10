@@ -10,8 +10,4 @@ resource "aws_s3_bucket" "env0bucket" {
     tags = {
       Name = "bucketdemo"
     }
-
-  versioning {
-    enabled = true
-  }
 }
