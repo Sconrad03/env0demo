@@ -6,5 +6,4 @@ provider "aws" {
 
 resource "aws_s3_bucket" "env0bucket" {
   bucket = "bucketdemo"
-  acl = "private"
 }
